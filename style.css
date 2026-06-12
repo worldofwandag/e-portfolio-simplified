@@ -100,6 +100,7 @@ nav {
 
 .menu__icons a {
   display: block;
+  position: relative;
   color: var(--text-2);
   padding: 10px;
   border-radius: 10px;
@@ -109,9 +110,29 @@ nav {
     background-color 0.3s ease;
 }
 
+/* text of links appear after hover */
+.menu__icons a::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -18px;
+  left: -32px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--accent);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
 .menu__icons a:hover {
   color: var(--accent);
   background-color: rgba(0, 0, 0, 0.35);
+}
+
+.menu__icons a:hover::after {
+  opacity: 1;
 }
 
 .menu__icons svg {
@@ -725,7 +746,6 @@ CONTACT & FOOTER
     row-gap: 40px;
     margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -767,7 +787,6 @@ CONTACT & FOOTER
     display: block;
     mix-blend-mode: multiply;
   }
-
 
   .hero__circle {
     position: absolute;
@@ -817,7 +836,7 @@ CONTACT & FOOTER
     margin-bottom: 20px;
   }
 
-  .footer__wrapper{
+  .footer__wrapper {
     flex-direction: column;
     row-gap: 20px;
   }
