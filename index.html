@@ -11,33 +11,366 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
-    <section id="landing container">
+    <section id="landing">
       <div class="row">
         <nav>
           <div class="logo__name">
-            <h2 class="name">jonathan.wandag</h2>
+            <h2 class="name">jonwandag</h2>
           </div>
           <div class="menu__icons">
-            <img src="assets/icons/techstack.svg"  alt="Tech Stack" />
-            <img src="assets/icons/email.svg"  alt="Email" />
-            <img src="assets/icons/projects.svg"  alt="Projects" />
-            <img src="assets/icons/github.svg"  alt="GitHub" />
-            <img src="assets/icons/linkedin.svg"  alt="LinkedIn" />            
+            <a href="#tech-stack" aria-label="Tech Stack">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="0.75"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="12 2 22 7 12 12 2 7" />
+                <polyline points="2 12 12 17 22 12" />
+                <polyline points="2 17 12 22 22 17" />
+              </svg>
+            </a>
+            <a href="#projects" aria-label="Projects">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="0.75"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 2H3v20h18V7z" />
+                <polyline points="15 2 15 7 21 7" />
+                <line x1="6" y1="12" x2="18" y2="12" />
+                <line x1="6" y1="16" x2="18" y2="16" />
+                <line x1="6" y1="9" x2="10" y2="9" />
+              </svg>
+            </a>
+            <a href="contact" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="0.75"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="2" y="4" width="20" height="16" />
+                <polyline points="2 4 12 13 22 4" />
+              </svg>
+            </a>
+            <a href="github.com" aria-label="GitHub">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <a href="linkedin.com" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  fill="currentColor"
+                  d="M0 0h24v24H0z M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.605 0 4.276 2.372 4.276 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
+                />
+              </svg>
+            </a>
           </div>
         </nav>
         <div class="hero">
+          <div class="hero__ellipses">
+            <svg
+              viewBox="0 0 400 120"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <!-- cylinder side edges flush to ellipse endpoints -->
+              <line
+                x1="22"
+                y1="45"
+                x2="43"
+                y2="94"
+                stroke="var(--text-2)"
+                stroke-width="0.5"
+                opacity="0.5"
+              />
+              <line
+                x1="378"
+                y1="45"
+                x2="357"
+                y2="94"
+                stroke="var(--text-2)"
+                stroke-width="0.5"
+                opacity="0.5"
+              />
+              <!-- rings top to bottom, slightly narrowing -->
+              <ellipse
+                cx="200"
+                cy="45"
+                rx="178"
+                ry="28"
+                fill="none"
+                stroke="var(--text-2)"
+                stroke-width="0.5"
+                opacity="1"
+              />
+              <ellipse
+                cx="200"
+                cy="58"
+                rx="173"
+                ry="26"
+                fill="none"
+                stroke="var(--text-2)"
+                stroke-width="0.3"
+                opacity="1"
+              />
+              <ellipse
+                cx="200"
+                cy="70"
+                rx="167"
+                ry="24"
+                fill="none"
+                stroke="var(--text-2)"
+                stroke-width="0.3"
+                opacity="1"
+              />
+              <ellipse
+                cx="200"
+                cy="82"
+                rx="162"
+                ry="22"
+                fill="none"
+                stroke="var(--text-2)"
+                stroke-width="0.3"
+                opacity="1"
+              />
+              <ellipse
+                cx="200"
+                cy="94"
+                rx="157"
+                ry="20"
+                fill="none"
+                stroke="var(--text-2)"
+                stroke-width="0.3"
+                opacity="1"
+              />
+            </svg>
+          </div>
           <div class="hero__left">
-            <h1 class="hero__greeting">Hello There!</h1>
-            <h1 class="hero__greeting">I'm Jonathan Wandag.</h1>
-            <p class="hero__about">Based in the US, I'm a fullstack developer, hyper-enthusastic about building accessible web apps that users enjoy</p>
-            <p class="hero__contact-me"><b>CONTACT ME</b></p>
+            <h1 class="hero__greeting">
+              Hello There!<br />
+              I'm <span>Jon Wandag.</span>
+            </h1>
+            <p class="hero__about">
+              based in the US, I'm a fullstack developer,<br>
+              hyper-enthusastic about building accessible<br>
+              web apps that users love and enjoy
+            </p>
+            <p class="contact-me">
+              <a href="#contact">
+                <b>CONTACT ME</b>
+              </a>
+            </p>
+          </div>
+          <div class="hero__right">
+            <img
+              class="hero__avatar"
+              src="./assets/images/2edit/hf_20260610_011720_6ea35ea0-67ee-458a-a270-ecce8104df69.png"
+              alt=""
+            />
+            <img class="hero__circle" src="assets/decorations/circle.svg" alt="" />
+          </div>
+        </div>
+        <hr class="section-divider" />
+      </div>
+    </section>
+
+
+    <section id="tech-stack">
+      <div class="row">
+        <div class="tech__ellipses">
+          <svg
+            viewBox="0 0 400 120"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <line
+              x1="22"
+              y1="45"
+              x2="43"
+              y2="94"
+              stroke="var(--text-2)"
+              stroke-width="0.5"
+              opacity="0.5"
+            />
+            <line
+              x1="378"
+              y1="45"
+              x2="357"
+              y2="94"
+              stroke="var(--text-2)"
+              stroke-width="0.5"
+              opacity="0.5"
+            />
+            <ellipse
+              cx="200"
+              cy="45"
+              rx="178"
+              ry="28"
+              fill="none"
+              stroke="var(--text-2)"
+              stroke-width="0.5"
+              opacity="1"
+            />
+            <ellipse
+              cx="200"
+              cy="58"
+              rx="173"
+              ry="26"
+              fill="none"
+              stroke="var(--text-2)"
+              stroke-width="0.3"
+              opacity="1"
+            />
+            <ellipse
+              cx="200"
+              cy="70"
+              rx="167"
+              ry="24"
+              fill="none"
+              stroke="var(--text-2)"
+              stroke-width="0.3"
+              opacity="1"
+            />
+            <ellipse
+              cx="200"
+              cy="82"
+              rx="162"
+              ry="22"
+              fill="none"
+              stroke="var(--text-2)"
+              stroke-width="0.3"
+              opacity="1"
+            />
+            <ellipse
+              cx="200"
+              cy="94"
+              rx="157"
+              ry="20"
+              fill="none"
+              stroke="var(--text-2)"
+              stroke-width="0.3"
+              opacity="1"
+            />
+          </svg>
+        </div>
+        <div class="tech__languages">
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/html.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">HTML</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/css.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">CSS</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/javascript.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">Javascript</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/react.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">React</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/nextjs.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">NextJS</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/typescript.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">Typescript</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/nodejs.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">NodeJS</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/expressjs.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">ExpressJS</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
+          </div>
+          <div class="tech__language">
+            <figure class="tech__icon">
+              <img src="./assets/icons/postgresql.svg" alt="" class="icon">
+            </figure>
+            <div class="tech__text">
+              <h3 class="tech__title">PostgreSQL</h3>
+              <p class="tech__description">3 years of experience</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
+    <section id="projects">
+      <div class="row">
+        <div class="projects__header">
+          <h2 class="projects__title">Projects</h2>
+          <p class="contact-me">
+            <a href="#contact">
+              <b>CONTACT ME</b>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
