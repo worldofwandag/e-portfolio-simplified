@@ -264,6 +264,25 @@ nav {
   opacity: 0.5;
 }
 
+.hero__glyph {
+  position: absolute;
+  color: var(--text-2);
+  top: 300px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 540px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.2;
+  
+}
+
+.hero__glyph svg {
+  width: 100%;
+  height: auto;      /* keeps it square as it scales */
+}
+
 .section-divider {
   border: none;
   border-top: 1px solid var(--text-2);
@@ -674,6 +693,11 @@ CONTACT & FOOTER
     top: 600px;
   }
 
+  .hero__glyph {
+    top: 290px;
+    z-index: -3;
+  }
+
   .section-divider {
     margin: 100px 0 80px 0;
   }
@@ -739,6 +763,11 @@ CONTACT & FOOTER
     right: 164px;
   }
 
+  .hero__glyph {
+    top: 320px;
+    left: 22%;
+  }
+
   .projects__header {
     flex-direction: column;
     align-items: center;
@@ -793,6 +822,13 @@ CONTACT & FOOTER
     right: -20%;
     top: 355px;
     bottom: auto;
+  }
+
+  .hero__glyph {
+    top: 500px;
+    left: 20%;
+    z-index: 0;
+    opacity: 1;
   }
 
   .hero__left {
